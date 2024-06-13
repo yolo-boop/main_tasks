@@ -1,0 +1,58 @@
+<!--anchor tags, display properties, flex, external styling-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: underline;
+        /*text-decoration by default will be underline for a hyperlink
+            and now text-decoration style would be used to style the line*/
+            /*flex will shift the content in a row way*/
+        text-decoration-style: dotted;
+      }
+      .outerox{
+        background-color:yellow;
+        width:250px;
+        /*if you dont have any elements on right, then display:flex will just push the elements below to right*/
+        /*if we choose display: block, the divisions will come one after other*/
+        display:flex;
+        /*content will go to center, any type of content*/
+        justify-content: center;
+        /*flex direction is used when you want to use flex direction*/
+        flex-direction: row-reverse;
+      }
+      #box_1{
+        height:100px;
+        width:150px;
+        background-color: red;
+        margin:10px;
+      }
+      #box_2{
+        height:100px;
+        width:150px;
+        background-color: blue;
+        margin:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>You can do this</h1>
+    <!--anchor tags are used to connect external webpages-->
+    <!--href-->
+    <!--will take you no where if you give empty href -->
+    <!--and to show it as a link you have to add href -->
+    <!--target="_blank means it will open on new website"-->
+    <a href="https://www.wikipedia.org/" target="_blank"
+      >Unlock your potential!</a
+    >
+    <!--if you wish to access a html file in the same folder using another one, then just use the below format that is (double dot)../prev_folder_name/name_.html-->
+    <a href="../DAY_1/first_webpage.html">Visit my first webpage</a>
+    <div class="outerox">
+        <div id="box_1">box 1</div>
+        <div id="box_2">box 2</div>
+    </div>
+  </body>
+</html>
